@@ -132,11 +132,11 @@ function processMessage($message) {
 `123456789:ABCDE1FGHIJ5KLMNO5PQRS`
 
 
-به ربات ما امتیاز بدید  👈        [⭐️PvResan⭐️](https://telegram.me/storebot?start=pvresanbot)
+به ربات ما امتیاز بدید  👈        [⭐️ResanRobot⭐️](https://telegram.me/storebot?start=resanrobot)
 
-🔹هر نفر = یک ربات ✖️
+🔹هر نفر = یک ربات رایگان ✖️
 🔸ربات دوم = 5000ت ✔️
-🤖 @PvResanBot',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
+🤖 @ResanRobot',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
 
 
 $txxt = file_get_contents('pmembers.txt');
@@ -160,9 +160,12 @@ $pmembersid= explode("\n",$txxt);
 
         }
     }else if ($text == "Version") {
-      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>PvResan</b>
-<b>ver. 3.0</b>
-<code>Coded By</code> @nawr_i_man
+      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>ResanRobot</b>
+<b>ver 1.0</b>
+<code>ساخته شده توسط</code> @Tehran980
+
+در کانال ما عضو شوید
+[🔰Resan Channel🔰](https://telegram.me/resanch)
 Copy Right 2016©","parse_mode"=>"html"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
@@ -193,7 +196,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات 
     }
     else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != -1001061503305) {
       if (strpos($text, ":")) {
-apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
+apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال بررسی✅لطفا کمی منتظر بمانید"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
     $json = file_get_contents($url);
     $json_data = json_decode($json, true);
@@ -223,9 +226,9 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=');
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://tehran-privator.rhcloud.com/'.$chat_id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
-برای ورود به ربات خود کلیک کنید 👇😃
+برای ورود به ربات خود روی دکمه پایین بزنید👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=pvresanbot
+ https://telegram.me/storebot?start=resanrobot
 .";
     
     $bot_url    = "https://api.telegram.org/bot287288049:AAGUVfLY9biszCMBRL07ZO9qBBRTMFxvaWw/"; 
@@ -254,22 +257,25 @@ $output = curl_exec($ch);
 
       }
       else{
-         apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا یک ربات ثبت کرده اید  و قادر به ثبت ربات دوم نیستید.
-
-🔹هر نفر = یک ربات ✖️
-🔸ربات دوم = 5000ت ✔️
-
-🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @nawr_i_man_bot"));
+         apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا ربات رایگان خود را ساخته اید💯
+         
+         ربات اول: رایگان📍
+         ربات دوم: 5 هزار📌
+         
+         برای سفارش ربات دوم به پیوی ربات زیر 
+     مراجعه کنید👇
+     
+@ResanSupportBot
+         "));
       }
     }
       
     else{
-          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "توکن نا معتبر  ❌"));
+          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "توکن غیرمجاز❗️"));
     }
 }
 else{
-            apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "توکن نا معتبر  ❌"));
+            apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "توکن غیرمجاز❗"));
 
 }
 
@@ -278,7 +284,7 @@ else{
         if (strpos($text, ":")) {
           
           
-apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
+apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال بررسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
     $json = file_get_contents($url);
     $json_data = json_decode($json, true);
@@ -309,7 +315,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=pvresanbot
+ https://telegram.me/storebot?start=resanrobot
 .";
     
     $bot_url    = "https://api.telegram.org/bot287288049:AAGUVfLY9biszCMBRL07ZO9qBBRTMFxvaWw/"; 
@@ -333,13 +339,15 @@ $output = curl_exec($ch);
   
       }
       else{
-         apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا یک ربات ثبت کرده اید  و قادر به ثبت ربات دوم نیستید.
-
-🔹هر نفر = یک ربات ✖️
-🔸ربات دوم = 5000ت ✔️
-
-🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @nawr_i_man_bot"));
+         apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا ربات رایگان خود را ساخته اید💯
+         
+         ربات اول: رایگان📍
+         ربات دوم: 5 هزار📌
+         
+         برای سفارش ربات دوم به پیوی ربات زیر 
+     مراجعه کنید👇
+     
+@ResanSupportBot"));
       }
 
     }
@@ -356,12 +364,12 @@ else{
         } else if (strpos($text, "/stop") === 0) {
       // stop now
     } else {
-      apiRequestWebhook("sendMessage", array('chat_id' => $chat_id, "reply_to_message_id" => $message_id, "text" => '❌ دستور نا معتبر 
+      apiRequestWebhook("sendMessage", array('chat_id' => $chat_id, "reply_to_message_id" => $message_id, "text" => '❌ دستور نامعتبر 
 🌀برای راهنمایی /start را بزنید.
 .'));
     }
   } else {
-    apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => '❌ دستور نا معتبر 
+    apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => '❌ دستور نامعتبر 
 🌀برای راهنمایی /start را بزنید.
 .'));
   }
